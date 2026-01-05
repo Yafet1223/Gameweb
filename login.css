@@ -1,0 +1,79 @@
+body {
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color:#0d0d0d;
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+    background-size: 24px 24px;
+    color:#ffffff;
+    min-height: 100vh;
+    overflow-x: hidden;
+    transition: background-color 0.3s, color 0.3s;
+}
+/* .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    position: sticky;
+    top: 0;
+    background-color: rgba(13, 13, 13, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+} */
+.signup{
+    color: white;
+}
+
+.signup1 {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #000; 
+    margin-bottom: 10px;
+}
+
+
+.signup1 {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #000; 
+    margin-bottom: 10px;
+}
+
+
+.signup2 {
+    background-color: #000; 
+    color: #ff0000; 
+    border: 2px solid #ff0000; 
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+
+
+.signup2:hover {
+    background-color: #ff0000; 
+    color: #fff; 
+    border-color: #ff0000; 
+}
+.login1{
+    background-color: #000; 
+    color: #ff0000; 
+    border: 2px solid #ff0000; 
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+.login1:hover{
+    background-color: #ff0000; 
+    color: #fff; 
+    border-color: #ff0000; 
+}

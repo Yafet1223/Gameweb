@@ -20,7 +20,7 @@
         <label for="remember">Remember Me</label><br><br>
 
      
-        <button type="submit" class="login1">Login</button>
+       
     </form>
 
   
@@ -30,8 +30,8 @@
         </p>
            
         
+         <button type="submit" class="login1" id="loginup">Login</button><br><br>
         <button class="signup2" id="signup">Sign up</button>
-        
     
     <script>
         const button5=document.getElementById("signup");
@@ -39,5 +39,12 @@
     window.location.href='signup.html';
 });
     </script>
+        <script>
+            const button6=document.getElementById("loginup");
+            button6.addEventListener('click',() =>{
+                window.location.href='game.html';
+            });
+        </script>
+  
     </body>
 </html>

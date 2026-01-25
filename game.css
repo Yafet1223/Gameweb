@@ -21,6 +21,7 @@ body{
     font-size:20px;
 }
 
+<<<<<<< HEAD
 .games-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -205,3 +206,5 @@ body.dark-mode{
     background-color: black;
     color: white;
 }
+=======
+>>>>>>> 2e4617f91bd03cd6f7a05a2d41939a39b5e413eb

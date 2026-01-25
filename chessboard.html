@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Board - Simple Example</title>
+    <link rel="stylesheet" href="chessboard.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Chess Board</h1>
+        <p class="description">A simple 8x8 chess board with black and red squares</p>
+        <div class="chess-board">
+            <!-- Row 1 - Black pieces (top) -->
+            <div class="square black"><span class="piece dark">♜</span></div>
+            <div class="square red"><span class="piece dark">♞</span></div>
+            <div class="square black"><span class="piece dark">♝</span></div>
+            <div class="square red"><span class="piece dark">♛</span></div>
+            <div class="square black"><span class="piece dark">♚</span></div>
+            <div class="square red"><span class="piece dark">♝</span></div>
+            <div class="square black"><span class="piece dark">♞</span></div>
+            <div class="square red"><span class="piece dark">♜</span></div>
+            
+            <!-- Row 2 - Black pawns -->
+            <div class="square red"><span class="piece dark">♟</span></div>
+            <div class="square black"><span class="piece dark">♟</span></div>
+            <div class="square red"><span class="piece dark">♟</span></div>
+            <div class="square black"><span class="piece dark">♟</span></div>
+            <div class="square red"><span class="piece dark">♟</span></div>
+            <div class="square black"><span class="piece dark">♟</span></div>
+            <div class="square red"><span class="piece dark">♟</span></div>
+            <div class="square black"><span class="piece dark">♟</span></div>
+            
+            <!-- Row 3-6 - Empty squares -->
+            <div class="square black"></div>
+            <div class="square red"></div>
+            <div class="square black"></div>
+            <div class="square red"></div>
+            <div class="square black"></div>
+            <div class="square red"></div>
+            <div class="square black"></div>
+            <div class="square red"></div>
+            
+            <div class="square red"></div>
+            <div class="square black"></div>
+            <div class="square red"></div>
+            <div class="square black"></div>
+            <div class="square red"></div>
+            <div class="square black"></div>
+            <div class="square red"></div>
+            <div class="square black"></div>
+            
+            <div class="square black"></div>
+            <div class="square red"></div>
+            <div class="square black"></div>
+            <div class="square red"></div>
+            <div class="square black"></div>
+            <div class="square red"></div>
+            <div class="square black"></div>
+            <div class="square red"></div>
+            
+            <div class="square red"></div>
+            <div class="square black"></div>
+            <div class="square red"></div>
+            <div class="square black"></div>
+            <div class="square red"></div>
+            <div class="square black"></div>
+            <div class="square red"></div>
+            <div class="square black"></div>
+            
+            <!-- Row 7 - White pawns -->
+            <div class="square black"><span class="piece light">♙</span></div>
+            <div class="square red"><span class="piece light">♙</span></div>
+            <div class="square black"><span class="piece light">♙</span></div>
+            <div class="square red"><span class="piece light">♙</span></div>
+            <div class="square black"><span class="piece light">♙</span></div>
+            <div class="square red"><span class="piece light">♙</span></div>
+            <div class="square black"><span class="piece light">♙</span></div>
+            <div class="square red"><span class="piece light">♙</span></div>
+            
+            <!-- Row 8 - White pieces (bottom) -->
+            <div class="square red"><span class="piece light">♖</span></div>
+            <div class="square black"><span class="piece light">♘</span></div>
+            <div class="square red"><span class="piece light">♗</span></div>
+            <div class="square black"><span class="piece light">♕</span></div>
+            <div class="square red"><span class="piece light">♔</span></div>
+            <div class="square black"><span class="piece light">♗</span></div>
+            <div class="square red"><span class="piece light">♘</span></div>
+            <div class="square black"><span class="piece light">♖</span></div>
+        </div>
+        <div class="info">
+            <h2>Chess Pieces Colors:</h2>
+            <ul>
+                <li><strong>White pieces:</strong> White color (#FFFFFF) - visible on both black and red squares</li>
+                <li><strong>Black pieces:</strong> Dark gray (#333333) with white outline - visible on red squares</li>
+                <li><strong>Who will win</strong> select a player</li>
+                <li>Make ur Game efficient</li>
+            </ul>
+        </div>
+    </div>
+    <script src="chess.Js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #0d0d0d;
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+    background-size: 24px 24px;
+    color: #ffffff;
+    min-height: 100vh;
+}
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.back-btn:hover {
+    background: rgba(255, 51, 51, 0.2);
+    border-color: #ff3333;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.genres-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.genre-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 40px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.genre-card:hover {
+    transform: translateY(-5px);
+    border-color: #ff3333;
+    box-shadow: 0 10px 30px rgba(255, 51, 51, 0.3);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.genre-card:hover h2 {
+    color: #ff3333;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+    
+    .genres-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkers Game</title>
+    <link rel="stylesheet" href="checkers.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>Checkers</h1>
+            <div class="game-info">
+                <div class="player-info">
+                    <span class="player-label">Current Player:</span>
+                    <span class="current-player" id="currentPlayer">Red</span>
+                </div>
+                <div class="score">
+                    <span>Red: <span id="redScore">12</span></span>
+                    <span>Black: <span id="blackScore">12</span></span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="board-container">
+            <div id="board" class="board"></div>
+        </div>
+        
+        <div class="game-controls">
+            <button id="newGame" class="btn">New Game</button>
+            <div id="gameStatus" class="game-status"></div>
+        </div>
+    </div>
+    
+    <script src="checkers.js"></script>
+</body>
+</html>

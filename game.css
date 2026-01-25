@@ -1,0 +1,207 @@
+body{
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #0d0d0d;
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+    background-size: 24px 24px;
+    color: #ffffff;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+.header1 {
+    background-color: #000; 
+    color: red;
+    font-size: 40px;
+
+}
+.header2{
+    background-color:black;
+    font-size:20px;
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.game-card {
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.game-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(255, 51, 51, 0.4);
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 12px 24px rgba(255, 51, 51, 0.15);
+}
+
+.game-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.game-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.game-card:hover .game-image {
+    transform: scale(1.1);
+}
+
+.game-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.game-card:hover .game-overlay {
+    opacity: 1;
+}
+
+.play-btn {
+    padding: 12px 28px;
+    background-color: #ff3333;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.play-btn:hover {
+    background-color: #ff4444;
+    transform: scale(1.05);
+}
+
+.game-info {
+    padding: 20px;
+}
+
+.game-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.game-category {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 20px;
+        flex-wrap: wrap;
+    }
+
+    .header-center {
+        order: 3;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .header-nav {
+        gap: 12px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+    }
+
+    .hero-headline {
+        font-size: 48px;
+    }
+
+    .hero-subheadline {
+        font-size: 16px;
+    }
+
+    .project-search-container {
+        flex-direction: column;
+    }
+
+    .search-filters {
+        width: 100%;
+        justify-content: stretch;
+    }
+
+    .filter-btn {
+        flex: 1;
+    }
+
+    .main-content {
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-headline {
+        font-size: 36px;
+    }
+
+    .suggested-tags {
+        gap: 8px;
+    }
+
+    .tag {
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+
+    .statistics {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .stat-separator {
+        display: none;
+    }
+
+    .games-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+}
+#content1 {
+    display: none;
+}
+body.dark-mode{
+    background-color: black;
+    color: white;
+}

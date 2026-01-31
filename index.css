@@ -17,6 +17,12 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
+body:not(.dark-mode) {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+}
+
 /* Header */
 .header {
     display: flex;
@@ -559,6 +565,107 @@ body {
     position: relative;
 }
 
+/* Light Mode Styles */
+body:not(.dark-mode) {
+    background-color: #f5f5f5;
+    color: #1a1a1a;
+}
+
+body:not(.dark-mode) .header {
+    background-color: rgba(245, 245, 245, 0.9);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body:not(.dark-mode) .logo-square {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+body:not(.dark-mode) .logo-text {
+    color: #1a1a1a;
+}
+
+body:not(.dark-mode) .header-search {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+body:not(.dark-mode) .search-input {
+    color: #1a1a1a;
+}
+
+body:not(.dark-mode) .search-input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+body:not(.dark-mode) .nav-link {
+    color: #1a1a1a;
+}
+
+body:not(.dark-mode) .nav-icon {
+    color: #1a1a1a;
+}
+
+body:not(.dark-mode) .headline-white {
+    color: #1a1a1a;
+}
+
+body:not(.dark-mode) .hero-subheadline {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+body:not(.dark-mode) .project-search-bar {
+    background-color: rgba(0, 0, 0, 0.03);
+    border-color: #ff3333;
+}
+
+body:not(.dark-mode) .filter-btn {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.1);
+    color: #1a1a1a;
+}
+
+body:not(.dark-mode) .tag {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.1);
+    color: #1a1a1a;
+}
+
+body:not(.dark-mode) .game-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+body:not(.dark-mode) .game-title {
+    color: #1a1a1a;
+}
+
+body:not(.dark-mode) .game-category {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+body:not(.dark-mode) .section-title {
+    color: #1a1a1a;
+}
+
+body:not(.dark-mode) .stat-item {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+body:not(.dark-mode) #content1 {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+body:not(.dark-mode) #content1 h3 {
+    color: #1a1a1a;
+}
+
+body:not(.dark-mode) #content1 p {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+/* Dark Mode Styles */
 body.dark-mode {
     background-color: #000000;
     color: #ffffff;

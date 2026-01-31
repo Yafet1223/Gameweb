@@ -1,5 +1,14 @@
 // Wait for DOM to be fully loaded before accessing elements
 document.addEventListener("DOMContentLoaded", () => {
+    // Logo click - go to home
+    const logo = document.querySelector(".logo");
+    if (logo) {
+        logo.style.cursor = "pointer";
+        logo.addEventListener("click", () => {
+            window.location.href = "index.html";
+        });
+    }
+
     // Icon dropdown functionality
     const navicon1 = document.getElementById("icon1");
     const content = document.getElementById("content1");
@@ -11,6 +20,49 @@ document.addEventListener("DOMContentLoaded", () => {
             } else {
                 content.style.display = "block";
             }
+        });
+    }
+
+    // View options in dropdown
+    const viewOptions = content?.querySelectorAll("p");
+    if (viewOptions) {
+        viewOptions.forEach(option => {
+            option.style.cursor = "pointer";
+            option.addEventListener("click", () => {
+                const view = option.textContent.toLowerCase();
+                const grid = document.getElementById("games-grid");
+                if (grid) {
+                    if (view.includes("list")) {
+                        grid.style.gridTemplateColumns = "1fr";
+                    } else if (view.includes("compact")) {
+                        grid.style.gridTemplateColumns = "repeat(auto-fit, minmax(200px, 1fr))";
+                        grid.style.gap = "15px";
+                    } else {
+                        grid.style.gridTemplateColumns = "repeat(auto-fit, minmax(280px, 1fr))";
+                        grid.style.gap = "24px";
+                    }
+                }
+                content.style.display = "none";
+            });
+        });
+    }
+
+    // Square icon - notifications/saved
+    const navIcons = document.querySelectorAll(".nav-icon");
+    navIcons.forEach(icon => {
+        if (!icon.id && icon.textContent.trim() === "□") {
+            icon.addEventListener("click", () => {
+                alert("Notifications / Saved Items");
+            });
+        }
+    });
+
+    // G icon - profile/account
+    const gIcon = document.getElementById("icon3");
+    if (gIcon) {
+        gIcon.style.cursor = "pointer";
+        gIcon.addEventListener("click", () => {
+            window.location.href = "login.html";
         });
     }
 
@@ -88,6 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
+    // Search functionality
     const s1 = document.getElementById("header-search-input");
     const s2 = document.getElementById("main-search-input");
     [s1, s2].forEach(s => s && s.addEventListener("input", e => {
@@ -96,4 +149,23 @@ document.addEventListener("DOMContentLoaded", () => {
         );
         if(s1 && s2) s2.value = s1.value = e.target.value;
     }));
+
+    // Keyboard shortcut ⌘ K to focus search
+    document.addEventListener("keydown", e => {
+        if ((e.ctrlKey || e.metaKey) && e.key === "k") {
+            e.preventDefault();
+            (s2 || s1)?.focus();
+        }
+    });
+
+    // Make game cards clickable
+    document.querySelectorAll(".game-card").forEach(card => {
+        card.style.cursor = "pointer";
+        card.addEventListener("click", (e) => {
+            if (!e.target.closest(".play-btn")) {
+                const playBtn = card.querySelector(".play-btn");
+                if (playBtn) playBtn.click();
+            }
+        });
+    });
 });

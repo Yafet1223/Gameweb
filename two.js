@@ -14,7 +14,7 @@ button3.addEventListener('click', () => {
 });
 const button4=document.getElementById('play4');
 button4.addEventListener('click',() =>{
-    window.location.href='chess2.html';
+    window.location.href='sudoku.html';
 });
 const button5=document.getElementById("signup");
 button5.addEventListener('click',() =>{

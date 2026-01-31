@@ -10,7 +10,6 @@ squares.forEach(square => {
 
 function handleSquareClick(square) {
     const piece = square.querySelector(".piece");
-
     // If no piece selected yet
     if (!selectedPiece) {
         if (!piece) return;
@@ -59,3 +58,4 @@ function clearSelection() {
 function clearHighlights() {
     squares.forEach(sq => sq.classList.remove("selected"));
 }
+
